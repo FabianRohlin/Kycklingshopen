@@ -1,6 +1,12 @@
 *{
     margin: 0px;
 }
+* p{
+    font-size: larger;
+}
+* h1{
+    font-size: xx-large;
+}
 body{
   overflow-x: hidden;
 }
@@ -16,7 +22,6 @@ body{
   display: flex;
   flex-direction: row;
   font-weight: bold;
-  font-size: larger;
   text-align: center;  
 }
 .functions{
@@ -61,45 +66,25 @@ body{
   background-color: #232323;
   color:white;
   align-items: flex-end;
-  padding-bottom: 50px;
 }
-.produkts{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 1200px;
-  background-color: #232323;
-  flex-direction: column;
-  padding-bottom: 50px;
-}
-#produkts-img{
-  display: flex;
-  justify-content: space-around;
-}
-#produkts-img a,
-#produkts-img img{
-  width: 250px;
-  height: 250px;
-}
-#produkts-img img:hover{
-  box-shadow:0 0 20px 20px rgba(255, 103, 0, 0.7);
-}
-.desc{
-  display: flex;
-  justify-content: space-around;
-  color: white;
-  text-align: center;
-}
-.main-bot{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100px;
-  background-color: #232323;
-  color:white;
-  flex-direction: column;
-}
+.main_2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: #232323;
+    color:white;
+    padding-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+.main_2 img{
+    display: flex;
+    height: 500px;
+    width: 50%;
+    border: 5px solid #232323;
+  }
+
 footer{
   display: flex;
   justify-content: space-evenly;
