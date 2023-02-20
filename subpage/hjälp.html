@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyckling shopen</title>
     <script src="https://kit.fontawesome.com/cb6bb63253.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="hjälp.css">
+    <link rel="stylesheet" href="/jsStyles.css">
 </head>
 <body>
 <div class="top-bar">
@@ -20,10 +21,24 @@
             <li><a href="konto.html">Konto</a></li>
         </ul>
     </div>
-    <div class="functions">
-       <img src="/image/shopping-cart.png" alt="">
-       <img src="/image/magnifying-glass.png" alt="">
-    </div>
+<div class="cart-modal-overlay">
+    <div class="cart-modal">
+        <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+        
+        <div class="product-rows">
+        </div>
+        <div class="total">
+            <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">$0</span>
+                <button onclick="visitPage();" class="purchase-btn">PURCHASE</button>
+        </div>
+        </div>
+</div>
+    <div class="cart-btn">
+    <i id="cart" class="fas fa-shopping-cart"></i>
+      <span class ="cart-quantity">0</span>
+  </div>
 </div>
 <div class="top-bar-bot">
     <div class="title">
@@ -63,5 +78,6 @@
         </div>
     </div>
 </footer>
+<script src="/addtocart.js"></script>
 </body>
 </html>
