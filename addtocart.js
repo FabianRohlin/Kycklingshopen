@@ -142,6 +142,9 @@ function purchaseBtnClicked () {
 function visitPage(){
   window.location='subpage/utcheckning.html';
 }
+function visitPage2(){
+  window.location='utcheckning.html';
+}
 // end of purchase items
 
 //alert user if cart is empty
